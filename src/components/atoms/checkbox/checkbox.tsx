@@ -1,5 +1,5 @@
-import { TCheckboxProperties } from "./checkbox.types";
+import { TCheckboxProperties } from './checkbox.types';
 
 export const Checkbox = (props: TCheckboxProperties) => (
-  <input type="checkbox" {...props} />
+    <input type="checkbox" {...props} />
 );

@@ -1,3 +1,3 @@
-import { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes } from 'react';
 
 export type TButtonProperties = ButtonHTMLAttributes<HTMLButtonElement>;

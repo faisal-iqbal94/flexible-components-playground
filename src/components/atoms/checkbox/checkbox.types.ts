@@ -1,3 +1,3 @@
-import { InputHTMLAttributes } from "react";
+import { InputHTMLAttributes } from 'react';
 
 export type TCheckboxProperties = InputHTMLAttributes<HTMLInputElement>;

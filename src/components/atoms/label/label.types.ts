@@ -1,3 +1,3 @@
-import { LabelHTMLAttributes } from "react";
+import { LabelHTMLAttributes } from 'react';
 
 export type TLabelProperties = LabelHTMLAttributes<HTMLLabelElement>;

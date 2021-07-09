@@ -1,6 +1,7 @@
-import { FC, InputHTMLAttributes, LabelHTMLAttributes } from "react";
+import { PropsWithChildren } from 'react';
 
-export type TInputGroupProperties = {
-  renderInput: FC<InputHTMLAttributes<HTMLInputElement>>;
-  renderLabel: FC<LabelHTMLAttributes<HTMLLabelElement>>;
+export type TInputGroupProperties = PropsWithChildren<Record<string, unknown>>;
+
+export type TInputGroupContext = {
+    id: string;
 };

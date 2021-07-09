@@ -1,1 +1,1 @@
-export * from "./use-random-id.hook";
+export * from './use-random-id.hook';
