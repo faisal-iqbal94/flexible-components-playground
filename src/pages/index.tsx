@@ -17,8 +17,8 @@ export default function Home() {
       {/* <Label>Username: </Label>
       <Input value={value} onChange={(e) => setValue(e.target.value)} /> */}
       <InputGroup
-        Label={(props) => <Label {...props}>Username: </Label>}
-        Input={(props) => (
+        renderLabel={(props) => <Label {...props}>Username: </Label>}
+        renderInput={(props) => (
           <TextInput
             {...props}
             value={value}
@@ -27,8 +27,8 @@ export default function Home() {
         )}
       />
       <InputGroup
-        Label={(props) => <Label {...props}>Are you having fun?</Label>}
-        Input={(props) => (
+        renderLabel={(props) => <Label {...props}>Are you having fun?</Label>}
+        renderInput={(props) => (
           <Checkbox {...props} onChange={() => console.log("Woohoo!")} />
         )}
       />

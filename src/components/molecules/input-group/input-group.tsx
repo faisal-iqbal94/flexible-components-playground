@@ -2,15 +2,15 @@ import { useRandomId } from "../../../hooks";
 import { TInputGroupProperties } from "./input-group.types";
 
 export const InputGroup = ({
-  Input = (props) => <input {...props} />,
-  Label = (props) => <label {...props} />,
+  renderInput = (props) => <input {...props} />,
+  renderLabel = (props) => <label {...props} />,
 }: TInputGroupProperties) => {
   const id = useRandomId();
 
   return (
     <div>
-      <Label htmlFor={id} />
-      <Input id={id} />
+      {renderLabel({ htmlFor: id })}
+      {renderInput({ id })}
     </div>
   );
 };
